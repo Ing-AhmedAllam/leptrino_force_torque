@@ -3,5 +3,9 @@
   <node pkg="leptrino_force_torque" type="leptrino_force_torque" name="leptrino_force_torque" output="screen">
   	<param name="com_port" value="$(arg comport)" />  	  	
   </node>
+  <node pkg="leptrino_force_torque" type="leptrino_tare.py" name="leptrino_tare" output="screen">
+    <param name="avg_samples" value="300"/>
+  </node>
+
 </launch>  
  
